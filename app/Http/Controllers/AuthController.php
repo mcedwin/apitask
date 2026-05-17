@@ -95,7 +95,7 @@ class AuthController extends Controller
                     'name' => $googleUser['name'] ?? 'Usuario',
                     'email' => $googleUser['email'],
                     'timezone' => 'America/Lima',
-                    //'password' => bcrypt(Str::random(32)),
+                    'password' => bcrypt(Str::random(32)),
                 ]);
             }
 
